@@ -1,0 +1,202 @@
+.intro {
+  min-height: 1220px;
+
+  font-family: "SF-Pro-Display", "Arial", sans-serif;
+
+  background-color: #121217;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 2000px;
+  }
+}
+
+.intro__title {
+  margin-bottom: 0.15em;
+
+  font-weight: 600;
+  font-size: 1.23em;
+  line-height: 1.19048;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.4em;
+    line-height: 1.16;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.64;
+    line-height: 1.88;
+  }
+}
+
+.intro__extra-title {
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: 0 25px;
+
+  font-weight: 600;
+  font-size: 2.35em;
+  line-height: 1.1;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 1.35em;
+
+    font-size: 2.8em;
+    line-height: 1.08;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 1.6em;
+
+    font-size: 3.76em;
+    line-height: 1.0625;
+  }
+}
+
+.intro__bg-macbook {
+  height: 176px;
+
+  background: url(../img/intro/intro-mac-mobile.jpg) 50% 0 no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 315px;
+
+    background-image: url(../img/intro/intro-mac-tablet.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 470px;
+
+    background-image: url(../img/intro/intro-mac-desktop.jpg);
+  }
+}
+
+.intro__advantages-list {
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 633px;
+  }
+}
+
+.intro__advantages-item {
+  padding-top: 15px;
+  padding-bottom: 50px;
+
+  font-weight: 600;
+  font-size: 1.23em;
+  line-height: 1.19048;
+  color: #ffffff;
+  letter-spacing: 0.011em;
+
+  border-top: 2px solid #63636e;
+
+  @media (min-width: $tablet-width) {
+    width: 288px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.41em;
+    line-height: 1.16667;
+    letter-spacing: 0.009em;
+  }
+}
+
+.intro__bg-2-macbook {
+  height: 243px;
+  margin-bottom: 30px;
+
+  background: url(../img/intro/2-mac-mobile.png) 50% 0 no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 574px;
+
+    background-image: url(../img/intro/2-mac-tablet.png);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 703px;
+
+    background-image: url(../img/intro/2-mac-desktop.png);
+  }
+}
+
+.intro__2-macbook-description {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 575px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 625px;
+  }
+}
+
+.intro__2-macbook-column {
+  width: 40%;
+
+  line-height: 1.47059;
+  font-family: "SF-Pro-Text", "Arial", sans-serif;
+  letter-spacing: -0.016em;
+
+  span {
+    font-weight: 600;
+    font-size: 1.11em;
+    line-height: 1.31579;
+    font-family: "SF-Pro-Display", "Arial", sans-serif;
+    color: #ffffff;
+    letter-spacing: -0.016em;
+  }
+
+  @media (min-width: $tablet-width) {
+    span {
+      font-size: 1.23em;
+      letter-spacing: -0.022em;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 0.94em;
+    line-height: 1.25;
+    letter-spacing: -0.022em;
+    span {
+      font-size: 1.41em;
+      line-height: 1.16667;
+      letter-spacing: -0.022em;
+    }
+  }
+}
+
+.gallery {
+  height: 373px;
+
+  background: url(../img/intro/perf_gallery_table_glow_small.jpg) 50% 21px no-repeat;
+}
+
+
+.gallery__img-macbook {
+  height: 260px;
+
+/* background-image: url(../img/intro/perf_gallery_hw_small.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0; */
+
+  background: url(../img/intro/perf_gallery_hw_small.png) 50% 0 no-repeat;
+  background-size: 345px 195px;
+}

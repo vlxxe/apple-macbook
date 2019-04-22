@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>MacBook Pro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-apple" viewbox="0 0 18 48"><path d="M13.03 16.03C11.29 15.91 9.82 17 9 17c-.83 0-2.12-.94-3.48-.92-1.79.03-3.44 1.04-4.36 2.64C-.7 21.95.69 26.73 2.5 29.35c.89 1.28 1.94 2.72 3.33 2.67 1.34-.05 1.84-.86 3.46-.86 1.61 0 2.07.86 3.48.84 1.44-.03 2.35-1.31 3.23-2.59 1.02-1.48 1.44-2.92 1.46-3-.03-.01-2.8-1.07-2.83-4.27-.03-2.67 2.18-3.95 2.28-4.01-1.27-1.84-3.2-2.05-3.88-2.1m-1.07-1.72c.74-.89 1.23-2.13 1.1-3.37-1.06.04-2.34.71-3.11 1.6-.68.79-1.28 2.05-1.12 3.26 1.19.09 2.39-.6 3.13-1.49" fill="#fffffe"></path></symbol><symbol id="icon-basket" viewbox="0 0 16 48"><path d="M13.5 16h-1.52c-.24-2.18-2.17-3.52-3.98-3.52S4.27 13.82 4.02 16H2.5A2.5 2.5 0 0 0 0 18.5v11A2.5 2.5 0 0 0 2.5 32h11a2.5 2.5 0 0 0 2.5-2.5v-11a2.5 2.5 0 0 0-2.5-2.5zM8 13.63c1.26 0 2.59.9 2.83 2.37H5.17c.24-1.47 1.57-2.37 2.83-2.37zm7 15.87c0 .83-.67 1.5-1.5 1.5h-11c-.83 0-1.5-.67-1.5-1.5v-11c0-.83.67-1.5 1.5-1.5h11c.83 0 1.5.67 1.5 1.5v11z" fill="#fff"></path></symbol><symbol id="icon-search" viewbox="0 0 16 44"><path d="M15.27 28.29l-4.06-4.06a6.113 6.113 0 0 0 1.35-3.83c0-3.39-2.76-6.15-6.15-6.15-3.39 0-6.15 2.76-6.15 6.15s2.76 6.15 6.15 6.15c1.43 0 2.75-.5 3.8-1.33l4.06 4.06 1-.99zM6.4 25.33a4.93 4.93 0 0 1-4.92-4.92c0-2.71 2.2-4.92 4.92-4.92s4.92 2.21 4.92 4.92c.01 2.71-2.2 4.92-4.92 4.92z"></path></symbol></svg>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+
+      <a class="page-header__logo" href="#">
+        <svg width="18" height="48">
+          <use xlink:href="#icon-apple"></use>
+        </svg>
+        <span class="visually-hidden">Apple</span>
+      </a>
+
+      <div class="main-nav-wrapper main-nav--closed main-nav--nojs">
+
+        <div class="container-search">
+          <input type="text" name="search" placeholder="Поиск на Apple.com">
+          <svg width="16" height="44">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </div>
+
+        <nav class="main-nav">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Mac</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">iPad</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">iPhone</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Watch</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">TV</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Music</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Поддержка</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <a href="#" class="page-header__basket">
+        <svg width="16" height="48">
+          <use xlink:href="#icon-basket"></use>
+        </svg>
+        <span class="visually-hidden">
+          Корзина
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <section class="top-panel">
+      <div class="top-panel__wrapper">
+        <a href="#" class="top-panel__title">Macbook Pro</a>
+        <ul class="top-panel__menu-list panel-menu--closed panel-menu--nojs">
+          <li class="top-panel__menu-item">
+            <a href="#">Обзор</a>
+          </li>
+          <li class="top-panel__menu-item">
+            <a href="#">macOS</a>
+          </li>
+          <li class="top-panel__menu-item">
+            <a href="#">Спецификации</a>
+          </li>
+        </ul>
+
+        <button class="top-panel__menu-toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+
+        <button class="top-panel__buy-button">Купить</button>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h1 class="intro__title">MacBook Pro</h1>
+
+      <h2 class="intro__extra-title">Мощнее. Умнее.
+        <br>
+        Проще быть про.
+      </h2>
+
+      <div class="intro__bg-macbook">
+
+      </div>
+
+      <!-- <div class="picture-intro-mac">
+          <picture>
+            <source media="(min-width: 1068px)" srcset="img/intro/intro-mac-desktop.jpg">
+            <source media="(min-width: 735px)" srcset="img/intro/intro-mac-tablet.jpg">
+            <img src="img/intro/intro-mac-mobile.jpg" alt="Торты Мужчинам">
+          </picture>
+        </div> -->
+
+      <ul class="intro__advantages-list">
+        <li class="intro__advantages-item">
+          Новые процессоры Intel 8-го поколения c четырьмя и шестью ядрами.
+        </li>
+        <li class="intro__advantages-item">
+          До 32 ГБ памяти для работы сразу в нескольких мощных приложениях.
+        </li>
+        <li class="intro__advantages-item">
+          Впечатляющий дисплей Retina с технологией True Tone.
+        </li>
+        <li class="intro__advantages-item">
+          Панель Touch Bar для более продуктивной работы.
+        </li>
+      </ul>
+
+      <div class="intro__bg-2-macbook">
+        
+      </div>
+
+      <div class="intro__2-macbook-description">
+
+        <p class="intro__2-macbook-column">
+          <span>Модель 13 дюймов</span>
+          <br>
+          1,37 кг 14,9мм
+        </p>
+
+        <p class="intro__2-macbook-column">
+          <span>Модель 15 дюймов</span>
+          <br>
+          1,83 кг 15,5мм
+        </p>
+      </div>
+
+    </section>
+
+    <section class="perfomance">
+      <div class="perfomance__wrapper">
+
+        <h2 class="perfomance__title">Производительность</h2>
+        <h3 class="perfomance__extra-title">Ещё больше в ваших силах.</h3>
+
+        <p class="perfomance__text">MacBook Pro задаёт совершенно новые стандарты мощности и портативности ноутбуков.
+          Процессоры высокой
+          производительности, память большего объёма, передовая графика, сверхбыстрые накопители и другие впечатляющие
+          способности MacBook Pro помогут вам воплощать в жизнь любые творческие проекты — ещё быстрее, чем раньше.</p>
+
+        <ul class="perfomance__spec-list">
+          <li class="perfomance__spec-item">
+            Память до
+            <br>
+            <span>32<span class="sub">ГБ</span></span>
+          </li>
+
+          <li class="perfomance__spec-item">
+            Ускорение Turbo Boost до
+            <br>
+            <span>4,8<span class="sub">ГГц</span></span>
+          </li>
+
+          <li class="perfomance__spec-item">
+            Скорость чтения SSD-накопителей до
+            <br>
+            <span>3,2<span class="sub">ГБ/с</span></span>
+          </li>
+
+          <li class="perfomance__spec-item">
+            Без подзарядки до
+            <br>
+            <span>10<span class="sub">часов</span></span>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="gallery">
+        <div class="gallery__img-macbook"></div>
+      </div> -->
+    </section>
+
+
+  </main>
+
+  <footer class="main-footer">
+
+
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

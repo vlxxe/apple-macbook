@@ -1,0 +1,159 @@
+.perfomance {
+  padding-top: 85px;
+
+  background-color: #17171d;
+
+  &__wrapper {
+    width: 87.5%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 105px;
+
+    &__wrapper {
+      width: 692px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 180px;
+
+    &__wrapper {
+      width: 816px;
+    }
+  }
+}
+
+.perfomance__title {
+  margin-bottom: 0.25em;
+
+  font-weight: 600;
+  font-size: 1.23em;
+  line-height: 1;
+  letter-spacing: 0.011em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.88em;
+    letter-spacing: 0.004em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 2.17em;
+    letter-spacing: 0.007em;
+  }
+}
+
+.perfomance__extra-title {
+  margin-bottom: 0.5em;
+
+  font-weight: 600;
+  font-size: 2.35em;
+  line-height: 1.1;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.82em;
+    line-height: 1.08365;
+    letter-spacing: -0.003em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 3.76em;
+    line-height: 1.0625;
+    letter-spacing: -0.009em;
+  }
+}
+
+.perfomance__text {
+  margin-bottom: 2.75em;
+
+  font-size: 1.11em;
+  line-height: 1.42115;
+  letter-spacing: 0.012em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.23em;
+    line-height: 1.38105;
+    letter-spacing: 0.011em;
+  }
+}
+
+.perfomance__spec-list {
+  display: grid;
+  align-items: end;
+  max-width: 360px;
+  margin-bottom: 100px;
+
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(140px, 50%));
+  grid-template-rows: repeat(2, 1fr);
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 100px;
+
+    grid-gap: 45px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-gap: 65px;
+  }
+}
+
+.perfomance__spec-item {
+  /* flex-grow: 1;
+  flex-basis: 50%;
+  width: 180px;
+  height: 60px;
+  margin-bottom: 35px; */
+  font-size: 0.82rem;
+  line-height: 1.28583;
+  letter-spacing: 0.007rem;
+  span {
+    font-size: 2.35rem;
+    line-height: 1;
+    font-family: "SF-Pro-Display", "Arial", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0;
+    white-space: nowrap;
+
+    .sub {
+      font-weight: 600;
+      font-size: 1.41rem;
+      letter-spacing: 0.007rem;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    /* flex-grow: 0;
+    flex-basis: 0;
+    min-width: 150px;
+    margin: 0; */
+    span {
+      font-size: 2.82rem;
+      letter-spacing: -0.003rem;
+
+      .sub {
+        font-size: 1.88rem;
+        letter-spacing: 0.004rem;
+      }
+    }
+
+
+    @media (min-width: $desktop-width) {
+      span {
+        font-size: 3.76rem;
+        letter-spacing: -0.009rem;
+
+        .sub {
+          font-size: 2.35rem;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
