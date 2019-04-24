@@ -141,12 +141,10 @@
         </li>
       </ul>
 
-      <div class="intro__bg-2-macbook">
-        
-      </div>
+      <div class="intro__2-macbook">
+        <div class="intro__2-macbook-bg"></div>
 
       <div class="intro__2-macbook-description">
-
         <p class="intro__2-macbook-column">
           <span>Модель 13 дюймов</span>
           <br>
@@ -159,6 +157,8 @@
           1,83 кг 15,5мм
         </p>
       </div>
+
+    </div>
 
     </section>
 
@@ -195,15 +195,67 @@
           <li class="perfomance__spec-item">
             Без подзарядки до
             <br>
-            <span>10<span class="sub">часов</span></span>
+            <span>10<span class="sub">часов<sup>1</sup></span></span>
           </li>
         </ul>
       </div>
-      <!-- <div class="gallery">
-        <div class="gallery__img-macbook"></div>
-      </div> -->
-    </section>
 
+      <div class="gallery">
+        <div class="gallery__img-macbook">
+          <picture class="gallery__mac-screen active">
+            <source media="(min-width: 1068px)" srcset="/img/gallery/perf_gallery_screen_photo_large.jpg">
+            <source media="(min-width: 735px)" srcset="/img/gallery/perf_gallery_screen_photo_medium.jpg">
+            <img src="/img/gallery/perf_gallery_screen_photo_small.jpg" alt="Фотография">
+          </picture>
+          <picture class="gallery__mac-screen">
+            <img src="/img/gallery/perf_gallery_screen_coding_small.jpg" alt="Программирование">
+          </picture>
+
+        </div>
+
+        <ul class="tab-list">
+          <li class="active">
+            <a class="tab-control" href="#tab-1">Фотография</a>
+          </li>
+          <li>
+            <a class="tab-control" href="#tab-2">Программирование</a>
+          </li>
+          <li>
+            <a class="tab-control" href="#tab-3">Монтаж видео</a>
+          </li>
+          <li>
+            <a class="tab-control" href="#tab-4">3D-графика</a>
+          </li>
+          <li>
+            <a class="tab-control" href="#tab-5">Игры</a>
+          </li>
+        </ul>
+
+        <div class="gallery__text">
+          <p class="tab-panel active" id="tab-1">
+            Работайте с фотографиями высокого разрешения в Photoshop — редактируйте и ретушируйте с фантастической
+            скоростью.
+          </p>
+          <p class="tab-panel" id="tab-2">
+            Компилируйте код, работайте сразу с несколькими виртуальными машинами и наблюдайте, как быстро ваши идеи
+            становятся реальностью.
+          </p>
+          <p class="tab-panel" id="tab-3">
+            Редактируйте проекты с нескольких камер в Final Cut Pro X — на 15‑дюймовом MacBook Pro в вашем распоряжении
+            до
+            девяти потоков видео 4K в полном разрешении.
+          </p>
+          <p class="tab-panel" id="tab-4">
+            Оцените, насколько плавно работает рендеринг 3D моделей в реальном времени в Cinema 4D.
+          </p>
+          <p class="tab-panel" id="tab-5">
+            Играйте в игры с самой требовательной графикой, например Fortnite. Вас впечатлит скорость отклика и
+            богатство
+            детализации.
+          </p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -211,7 +263,7 @@
 
 
   </footer>
-
+  <script src="js/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 

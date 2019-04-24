@@ -27,5 +27,7 @@
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.4.0"
+  }
 }

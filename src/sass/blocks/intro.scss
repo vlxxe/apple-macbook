@@ -1,5 +1,5 @@
 .intro {
-  min-height: 1220px;
+  min-height: 1170px;
 
   font-family: "SF-Pro-Display", "Arial", sans-serif;
 
@@ -9,9 +9,9 @@
     min-height: 1570px;
   }
 
-  @media (min-width: $desktop-width) {
+  /* @media (min-width: $desktop-width) {
     min-height: 2000px;
-  }
+  } */
 }
 
 .intro__title {
@@ -114,20 +114,32 @@
   }
 }
 
-.intro__bg-2-macbook {
-  height: 243px;
-  margin-bottom: 30px;
+.intro__2-macbook {
+  background: url(../img/intro/2_up_back_glow_small.jpg) 50% 50px no-repeat;
+  
+  @media (min-width: $tablet-width) {
+    background: url(../img/intro/2_up_back_glow_medium.jpg) 50% 35px no-repeat;
+  }
+  
+  
+  @media (min-width: $desktop-width) {
+    background: url(../img/intro/2_up_back_glow_large.jpg) 50% 80px no-repeat;
+  }
+}
+
+.intro__2-macbook-bg {
+  height: 270px;
 
   background: url(../img/intro/2-mac-mobile.png) 50% 0 no-repeat;
 
   @media (min-width: $tablet-width) {
-    height: 574px;
+    height: 610px;
 
     background-image: url(../img/intro/2-mac-tablet.png);
   }
 
   @media (min-width: $desktop-width) {
-    height: 703px;
+    height: 760px;
 
     background-image: url(../img/intro/2-mac-desktop.png);
   }
@@ -183,20 +195,3 @@
   }
 }
 
-.gallery {
-  height: 373px;
-
-  background: url(../img/intro/perf_gallery_table_glow_small.jpg) 50% 21px no-repeat;
-}
-
-
-.gallery__img-macbook {
-  height: 260px;
-
-/* background-image: url(../img/intro/perf_gallery_hw_small.png);
-  background-repeat: no-repeat;
-  background-position: 50% 0; */
-
-  background: url(../img/intro/perf_gallery_hw_small.png) 50% 0 no-repeat;
-  background-size: 345px 195px;
-}

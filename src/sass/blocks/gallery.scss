@@ -1,0 +1,156 @@
+.gallery {
+  background: url(../img/gallery/perf_gallery_table_glow_small.jpg) 50% 33px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background: url(../img/gallery/perf_gallery_table_glow_medium.jpg) 50% 70px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url(../img/gallery/perf_gallery_table_glow_large.jpg) 50% 70px no-repeat;
+  }
+}
+
+.gallery__img-macbook {
+  height: 204px;
+  padding-top: 15px;
+
+  background: url(../img/gallery/perf_gallery_hw_small.png) 50% 0 no-repeat;
+  background-size: 346px 204px;
+
+  @media (min-width: $tablet-width) {
+    height: 446px;
+    padding-top: 22px;
+
+    background-image: url(../img/gallery/perf_gallery_hw_medium.png);
+    background-size: 808px 446px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    height: 594px;
+    padding-top: 32px;
+
+    background-image: url(../img/gallery/perf_gallery_hw_large.png);
+    background-size: 1075px 594px;
+  }
+}
+
+.gallery__mac-screen {
+  display: block;
+
+  text-align: center;
+  /* position: absolute;
+  top: 15px; */
+  /* left: calc((100%-50%)-80px); */
+  /* left: 80px; */
+}
+
+.tab-list {
+  display: flex;
+
+/* margin-right: 6%; */
+  margin-bottom: 20px;
+  margin-left: 6%;
+  padding-top: 20px;
+
+/* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+  /* width: 689px; */
+
+  border-bottom: 1px solid #444444;
+
+  li + li {
+    margin-left: 30px;
+  }
+
+  li:not(.active) a:hover {
+    color: #66bbff;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 715px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    li + li {
+      margin-left: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 755px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+
+    li + li {
+      margin-left: 60px;
+    }
+  }
+}
+
+.tab-list .active a {
+  position: relative;
+
+  display: block;
+
+  color: #cccccc;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background-color: #ffffff;
+  }
+}
+
+.tab-control {
+  display: block;
+  padding: 9px 0 11px;
+
+  color: #777777;
+  white-space: nowrap;
+
+  cursor: default;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1;
+  }
+}
+
+.tab-panel {
+  display: none;
+  margin: 0 6.25%;
+
+  &.active {
+    display: block;
+  }
+}
+
+.gallery__text {
+  color: #cccccc;
+
+  @media (min-width: $tablet-width) {
+    width: 575px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.gallery__mac-screen {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
