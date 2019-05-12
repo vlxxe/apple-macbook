@@ -65,17 +65,25 @@ $('.tab-list').each(function(){
   var $link = $tab.find('a')
   var $panel = $($link.attr('href'));
 
+  /* var $picture = $('.gallery__mac-screen'); */
+
+
   $this.on('click', '.tab-control', function(e) {
     e.preventDefault();
     var $link = $(this);
     var id = this.hash;
 
+    /* var set = 50;
+    var $pictureName = $($link.parent().attr('class')); */
+
     if (id && !$link.is('.active')) {
       $panel.removeClass('active');
       $tab.removeClass('active');
+      /* $picture.removeClass('active'); */
 
       $panel = $(id).addClass('active');
       $tab = $link.parent().addClass('active');
+      /* $('[class *= ($pictureName)]').addClass('active'); */
     }
   });
 });

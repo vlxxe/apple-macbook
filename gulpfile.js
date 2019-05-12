@@ -29,11 +29,6 @@ gulp.task('js', function () {
 });
 
 gulp.task("style", function () {
-	return gulp.src([
-		'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
-		'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
-	])
-	.pipe(gulp.dest('build/css')),
 	gulp.src("src/sass/main.+(sass|scss)")
 		.pipe(plumber())
 		.pipe(wait(100))
